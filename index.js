@@ -148,7 +148,7 @@ app.post("/webhook", async (req, res) => { //i want some
         await text(from, `Hai ${pushname}`)
       }
 
-      if (body == 'ai') {
+      if (cmd == 'ai') {
         await text(from, `Hai open ai${pushname}`)
       }
 
