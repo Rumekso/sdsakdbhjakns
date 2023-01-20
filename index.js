@@ -148,6 +148,10 @@ app.post("/webhook", async (req, res) => { //i want some
         await text(from, `Hai ${pushname}`)
       }
 
+      if (body == 'ai') {
+        await text(from, `Hai open ai${pushname}`)
+      }
+
       if (/https?:\/\/(web\.|www\.|m\.)?(facebook|fb)\.(com|watch)\S+/g.test(body)) {
         await text(from, 'Wait...')
         url = body.match(/https?:\/\/(web\.|www\.|m\.)?(facebook|fb)\.(com|watch)\S+/g)[0];
