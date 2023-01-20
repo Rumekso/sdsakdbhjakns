@@ -145,7 +145,7 @@ app.post("/webhook", async (req, res) => { //i want some
       }
 
       if (body == 'ping') {
-        await text(from, `Hai ${pushname}`)
+        await text(from, `Hai haloooooo ${pushname}`)
       }
 
       if (cmd == 'ai') {
